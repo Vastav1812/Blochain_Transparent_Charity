@@ -1,46 +1,36 @@
-# Charity Blockchain Project
+# Blockchain-Based Transparent Charity Platform 🌐
 
-### Problem Statement
-- There are no platforms that can be used by charities to ensure security while providing accessibility to maximum people.
-- The biggest problem faced is transparency, where people can rightly exercise their Right To Information by asking for a record of expenditure by the charity
-- Even if such applications are available, they are inaccessible to smaller organisations with a good user interface for ease of access.
+A decentralized platform built with **Solidity** and **React/TypeScript** to ensure transparency in charitable donations. All transactions are recorded on the blockchain for public auditing.
 
-### Requirements of the Project
- - **Solidity Web3**
-	* Solidity provides Inheritance properties in contracts including multiple level inheritance properties.
- - **Metamask**
-	* To have an easy-to-use and secure wallet service, the platform connects to users' MetaMask automatically.
- - **Node.js**
-	* Node.js is used a backend for our application. It records transactions communicates between the Applications and integrates frontend.
- - **Ganache**
-	* Ganache provides the GUI-based local Ethereum blockchain development environment to deploy and test contracts.
+![Demo Screenshot](./public/screenshot.png) <!-- Add a screenshot later -->
 
-### Project Working
-* A metamask connection is required to run the application for any transaction.
-* A ganache RPC Server is run with metamask as the wallet, using the node.js interface.
-* Charity and organisation details are saved in the application, and a hash value is generated
-* A transaction is carried out, between organisation and charity and transaction hash is generated for each transaction
-* A block is created, when the user mines all the transactions updates.
+## Features ✨
+- **Donate ETH** to the charity with a single click.
+- **Withdraw funds** (admin-only) with full transaction history.
+- **View all transactions** (donations/withdrawals) in real-time.
+- **Immutable records** stored on the Ethereum blockchain.
+- **MetaMask integration** for secure wallet interactions.
 
+## Tech Stack 🛠️
+- **Smart Contracts**: Solidity, Truffle, Ganache
+- **Frontend**: React, TypeScript, Web3.js
+- **Testing**: Truffle (Mocha/Chai), React Testing Library
+- **Deployment**: Ethereum Testnet (Goerli), Vercel/Netlify
 
-### YouTube Video
+## Prerequisites 📋
+- MetaMask browser extension
+- Node.js ≥ v16
+- Truffle Suite: `npm install -g truffle`
+- Ganache (local blockchain)
 
-<div align="center"> <a href="https://youtu.be/4CIUYSnVEIo"><img src="http://img.youtube.com/vi/4CIUYSnVEIo/0.jpg" width="30%"></a> <br> <a href="https://youtu.be/4CIUYSnVEIo">Demonstration Video</a></div>
-<br><br>
+## Installation 🚀
 
+### 1. Clone the Repository
+```bash
+git clone https://github.com/your-username/blockchain-charity-platform.git
+cd blockchain-charity-platform
+```
+### 2. Start Local Blockchain
+- Open Ganache and create a new workspace.
+- Update truffle-config.js to match Ganache's RPC server (port 7545).
 
-### License
-
-	Copyright (C) 2020 Harsh Sanjay Agrawal
-
-	Licensed under the Apache License, Version 2.0 (the "License");
-	you may not use this file except in compliance with the License.
-	You may obtain a copy of the License at
-
-	   http://www.apache.org/licenses/LICENSE-2.0
-
-	Unless required by applicable law or agreed to in writing, software
-	distributed under the License is distributed on an "AS IS" BASIS,
-	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-	See the License for the specific language governing permissions and
-	limitations under the License.
